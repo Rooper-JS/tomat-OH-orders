@@ -1,8 +1,13 @@
 {
-    "name": "typo3-incubator/site-surfcamp-2025",
+    "name": "rooper/tomat-oh-orders",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
+        {
+            "name": "Rooper",
+            "role": "Developer",
+            "homepage": "https://github.com/Rooper-JS"
+        },
         {
             "name": "TYPO3 CMS Core Team",
             "role": "Developer",

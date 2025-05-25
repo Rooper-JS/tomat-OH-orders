@@ -1,12 +1,11 @@
-name: surfcamp-base-2025
+name: tomat-OH-orders
 type: php
 docroot: public
 php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames:
-    - surfcamp-base-2025-bootstrap
-    - surfcamp-base-2025-fcbigfoot
+    - tomat-OH-orders-bootstrap
 additional_fqdns: []
 database:
     type: mariadb
