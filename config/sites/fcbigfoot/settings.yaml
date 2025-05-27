@@ -8,6 +8,8 @@ fcbigfoot:
     channels:
       instagram:
         link: 'https://www.instagram.com/typo3_official/'
+  logo: 'EXT:wave_cart/Resources/Public/Icons/logo.svg'
+  favicon: 'EXT:wave_cart/Resources/Public/Icons/logo.svg'
 waveCart:
   cartPid: 102
   orderPid: 102

@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Tomato body -->
+    <circle cx="100" cy="120" r="60" fill="#e53935" stroke="#000" stroke-width="5"/>
+
+    <!-- Glossy reflection -->
+    <ellipse cx="75" cy="95" rx="15" ry="8" fill="white" opacity="0.4"/>
+
+    <!-- Slightly lowered, natural green crown -->
+    <path d="M100 52
+           C92 32, 78 30, 74 50
+           C58 44, 56 64, 76 68
+           C70 82, 88 82, 100 72
+           C112 82, 130 82, 124 68
+           C144 64, 142 44, 126 50
+           C122 30, 108 32, 100 52Z"
+          fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+</svg>
