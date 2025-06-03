@@ -1,5 +1,5 @@
 <div class="spacer"></div>
-<f:link.action action="list" class="backLink">&larr; back to list</f:link.action>
+<f:link.action action="list" class="backLink">&larr; Zurück zur Liste</f:link.action>
 
 <div class="product-detail">
     <div class="product-image">
@@ -9,11 +9,9 @@
         <h1>
             {product.name}
         </h1>
-        {type} <br>
+        {product.subline} <br>
 
-        <f:if condition="{f:count(subject: product.variants)} > 0">
-            <p class="variant-label">Size:</p>
-        </f:if>
+
         <div class="variants-container">
             <f:for each="{product.variants}" as="variant">
                 <div class="variant-option {f:if(condition: '{variant.amount} == 0', then: 'sold-out')}" data-id="{variant.uid}">
@@ -21,13 +19,12 @@
                 </div>
             </f:for>
         </div>
-        <br>
-        <p class="variant-label">Price:</p>
-        {product.price -> f:format.number(decimals: 2)} € <br>
 
-        <button id="addToCart" class="btn btn-primary" disabled>Add to shopping cart</button> <br>
+         <br>
+
+        <button id="addToCart" class="btn btn-primary" disabled>Hinzufügen zur Auswahl</button> <br>
         <br>
-        <p class="variant-label">Description:</p>
+        <p class="variant-label">Beschreibung:</p>
         {product.description -> f:format.raw()}
     </div>
 </div>
@@ -35,9 +32,10 @@
 <div id="cartModal" class="modal-overlay">
     <div class="modal-content">
         <button id="closeModal" class="close-btn">&times;</button>
-        <p>✅ Successfully added to cart!</p>
+        <h3>✅ Erfolgreich zur Auswahl hinzugefügt!</h3>
+        <p>Unter dem Menüpunkt „Meine Auswahl“ kannst du deine Auswahl einsehen und bearbeiten.</p>
         <f:link.page class="btn-primary" pageUid="{cartPageId}">
-            Go to Cart
+            Gehe zu 'Meine Auswahl'
         </f:link.page>
     </div>
 </div>

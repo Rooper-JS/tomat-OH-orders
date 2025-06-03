@@ -293,6 +293,7 @@ class OrderController extends ActionController
             $newCartItem = new CartItem();
             $newCartItem->setPid($cartItemPid);
             $newCartItem->setName($product->getName());
+            $newCartItem->setSubline($product->getSubline());
             $newCartItem->setType($product->getType());
             $newCartItem->setAmount(1);
             $newCartItem->setSize($variant->getSize());

@@ -196,8 +196,8 @@ a:hover {
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
-  background-color: #0d6efd;
-  border: 1px solid #0d6efd;
+  background-color: #e53935; /* tomato red */
+  border: 1px solid #e53935;
   border-radius: 0.25rem;
   text-align: center;
   text-decoration: none;
@@ -206,14 +206,20 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #b71c1c; /* darker red */
+  border-color: #a31616;
+  color: #fff;
+}
+
+.btn-primary:focus {
+  background-color: #b71c1c; /* darker red */
+  border-color: #a31616;
   color: #fff;
 }
 
 .btn-primary:active {
-  background-color: #0a58ca;
-  border-color: #094ebd;
+  background-color: #a31616 !important;
+  border-color: #8e1212 !important;
   color: #fff;
 }
 
@@ -221,6 +227,35 @@ a:hover {
   opacity: 0.4;
   cursor: not-allowed;
   pointer-events: auto;
+}
+
+.filter-container {
+  display: none;
+}
+
+.footer-menu--item {
+  padding: 20px !important;
+  width: auto !important;
+}
+
+.variants-container {
+  display: none !important;
+}
+
+#cartSummary {
+  display: none;
+}
+
+.cart-discount-control {
+  display: none;
+}
+
+.footer--menu-container {
+  align-items: flex-end;
+}
+
+.hide {
+  display: none !important;
 }
 
 .cart-header, .cart-footer {

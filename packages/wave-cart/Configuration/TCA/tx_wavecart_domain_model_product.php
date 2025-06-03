@@ -36,6 +36,14 @@ return [
                 'required' => true,
             ],
         ],
+        'subline' => [
+            'label' => $ll . 'tx_wavecart_domain_model_product.subline',
+            'config' => [
+                'type' => 'input',
+                'size' => 100,
+                'eval' => 'trim',
+            ],
+        ],
         'description' => [
             'label' => $ll . 'tx_wavecart_domain_model_product.description',
             'config' => [
@@ -100,7 +108,7 @@ return [
     ],
     'types' => [
         1 => [
-            'showitem' => 'name, description, image, type, price, tax_rate, variants',
+            'showitem' => 'name, subline, description, image, variants',
         ],
     ],
 ];

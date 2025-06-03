@@ -2,12 +2,11 @@
       data-namespace-typo3-fluid="true">
 <div>
     <div class="spacer"></div>
-    <h1 class="headline">Cart</h1>
+    <h1 class="headline">Meine Auswahl</h1>
     <div class="spacer"></div>
     <div class="cart-header">
-        <div class="cart-header-details">Product</div>
-        <div class="cart-header-amount">Quantity</div>
-        <div class="cart-header-price">Price</div>
+        <div class="cart-header-details">Sorte</div>
+        <div class="cart-header-amount">Menge</div>
     </div>
     <f:form action="addCustomerData"
             controller="Order"
@@ -22,7 +21,7 @@
                         <f:image class="cart-item-image" image="{cartItem.image}" />
                         <div class="item-details">
                             <span class="item-name">{cartItem.name}</span>
-                            <span class="item-size">Size: {cartItem.size}</span>
+                            <span class="item-size">{cartItem.subline}</span>
                         </div>
 
                         <div class="amount-control" data-index="{iterator.index}">
@@ -34,15 +33,12 @@
                                 value="{cartItem.amount}" class="amount-number"/>
                             <button type="button" class="increase-btn">+</button>
                         </div>
-                        <span class="item-price" data-price="{cartItem.price}">
-                    {cartItem.price -> f:format.number(decimals: 2)}€
-                </span>
                     </li>
                 </f:for>
             </ul>
             </f:then>
             <f:else>
-                <p>Your shopping cart is empty.</p>
+                <p>Die Auswahl ist leer.</p>
             </f:else>
         </f:if>
         <div class="line"></div>
@@ -57,7 +53,7 @@
             <span id="discountTotal"></span><br />
             <span id="cartTotal">0€</span>
         </div>
-        <f:form.submit value="Next" class="submitButton btn-primary"/>
+        <f:form.submit value="Weiter" class="submitButton btn-primary"/>
     </f:form>
 </div>
 </html>

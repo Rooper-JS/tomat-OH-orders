@@ -124,6 +124,9 @@
 			<trans-unit id="tx_wavecart_domain_model_cartitem.name">
 				<source>Product name</source>
 			</trans-unit>
+			<trans-unit id="tx_wavecart_domain_model_cartitem.subline">
+                <source>Product subline</source>
+            </trans-unit>
 			<trans-unit id="tx_wavecart_domain_model_cartitem.type">
 				<source>Type</source>
 			</trans-unit>
@@ -153,6 +156,9 @@
 			<trans-unit id="tx_wavecart_domain_model_product.name">
 				<source>Name</source>
 			</trans-unit>
+			<trans-unit id="tx_wavecart_domain_model_product.subline">
+                <source>Subline</source>
+            </trans-unit>
 			<trans-unit id="tx_wavecart_domain_model_product.description">
 				<source>Description</source>
 			</trans-unit>

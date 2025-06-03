@@ -34,6 +34,14 @@ return [
                 'eval' => 'trim'
             ],
         ],
+        'subline' => [
+            'exclude' => 0,
+            'label' => $ll . 'tx_wavecart_domain_model_cartitem.subline',
+            'config' => [
+                'type' => 'input',
+                'eval' => 'trim'
+            ],
+        ],
         'type' => [
             'exclude' => 0,
             'label' => $ll . 'tx_wavecart_domain_model_cartitem.type',

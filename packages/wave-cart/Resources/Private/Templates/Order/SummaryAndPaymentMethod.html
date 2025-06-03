@@ -1,27 +1,21 @@
 {namespace wave=TYPO3Incubator\WaveCart\ViewHelpers}
 <div class="spacer"></div>
-<h1>Summary</h1>
+<h1>Zusammenfassung</h1>
 <div class="spacer"></div>
 <div class="cart-header">
-    <div class="cart-header-details">Product</div>
-    <div class="cart-header-amount">Quantity</div>
-    <div class="cart-header-price">Price</div>
+    <div class="cart-header-details">Sorte</div>
+    <div class="cart-header-amount">Menge</div>
 </div>
 <ul id="cartList">
     <f:for each="{cart.cartItems}" as="cartItem" iteration="iterator">
         <li class="cart-item">
             <div class="item-details">
                 <span class="item-name">{cartItem.name}</span>
-                <span class="item-size">Size: {cartItem.size}</span>
             </div>
 
             <div class="amount-number" data-index="{iterator.index}" style="border: none; margin-right: 40px;">
                 {cartItem.amount}
             </div>
-
-            <span class="item-price" data-price="{cartItem.price}">
-                    {cartItem.price -> f:format.number(decimals: 2)}€
-                </span>
         </li>
     </f:for>
 </ul>
@@ -32,15 +26,13 @@
 </div>
 
 <div class="spacer"></div>
-<p class="variant-label" style="font-weight: bold;">Adress Data:</p>
+<p class="variant-label" style="font-weight: bold;">Angegebene Informationen:</p>
 <div>
     {cart.customerFirstname} {cart.customerLastname}<br>
     {cart.customerEmail}<br>
-    {cart.customerAddress}<br>
-    {cart.customerZip} {cart.customerCity}
 </div>
 <div class="spacer"></div>
-<p class="variant-label" style="font-weight: bold;">Payment Method:</p>
+
 <f:form action="submit"
         controller="Order"
         objectName="cart"
@@ -48,14 +40,14 @@
         method="post"
         class="formContainer"
         style="width: 100%;">
-    <div class="payment-radio">
+    <div class="payment-radio hide">
         <f:form.radio property="paymentMethod" id="paymentMethod" value="0"/>
         <label for="paymentMethod"><wave:enum.label enumClassName="\TYPO3Incubator\WaveCart\Enum\PaymentMethodEnum" value="0" /></label>
     </div>
     <div class="spacer"></div>
     <div>
-        <f:link.action action="addCustomerData" arguments="{cart:cart}" class="backLink">&larr; Back</f:link.action>
-        <f:form.submit value="Submit" class="nextBtn btn-primary"/>
+        <f:link.action action="addCustomerData" arguments="{cart:cart}" class="backLink">&larr; Zurück</f:link.action>
+        <f:form.submit value="Abschicken" class="nextBtn btn-primary"/>
     </div>
 </f:form>
 

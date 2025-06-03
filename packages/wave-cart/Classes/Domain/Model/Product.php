@@ -17,6 +17,7 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 class Product extends AbstractEntity
 {
     protected string $name = '';
+    protected string $subline = '';
     protected string $description = '';
     protected ?FileReference $image = null;
     protected int $type = 0;
@@ -41,6 +42,16 @@ class Product extends AbstractEntity
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    public function getSubline(): string
+    {
+        return $this->subline;
+    }
+
+    public function setSubline(string $name): void
+    {
+        $this->subline = $subline;
     }
 
     public function getDescription(): string

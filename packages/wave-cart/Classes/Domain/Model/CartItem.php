@@ -8,6 +8,7 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 class CartItem extends AbstractEntity
 {
     protected string $name;
+    protected string $subline;
     protected int $type;
     protected float $price;
     protected int $taxRate;
@@ -25,6 +26,16 @@ class CartItem extends AbstractEntity
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    public function getSubline(): string
+    {
+        return $this->subline;
+    }
+
+    public function setSubline(string $subline): void
+    {
+        $this->subline = $subline;
     }
 
     public function getPrice(): float

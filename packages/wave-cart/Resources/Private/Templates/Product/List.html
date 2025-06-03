@@ -1,6 +1,6 @@
 {namespace wave=TYPO3Incubator\WaveCart\ViewHelpers}
 <div class="container">
-    <h1 class="headline">Products</h1>
+    <h1 class="headline">Auswahl an Tomaten</h1>
     <div class="filter-container">
         <label for="type-select">Choose type:</label>
         <select name="types" id="type-select">
@@ -36,7 +36,7 @@
                         {product.name}
                     </div>
                     <div class="tile-container--price">
-                        {product.price -> f:format.number(decimals: 2)} €
+                        {product.subline}
                     </div>
                 </f:link.action>
             </div>
