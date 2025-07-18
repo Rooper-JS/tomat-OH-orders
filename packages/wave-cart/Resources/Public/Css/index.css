@@ -101,6 +101,9 @@ a:hover {
     flex: 1 1 100%;
   }
 }
+.product-detail .product-data {
+  padding-left: 15px;
+}
 .product-detail .variants-container {
   display: flex;
 }
@@ -255,6 +258,10 @@ a:hover {
 }
 
 .hide {
+  display: none !important;
+}
+
+#tx_indexedsearch {
   display: none !important;
 }
 

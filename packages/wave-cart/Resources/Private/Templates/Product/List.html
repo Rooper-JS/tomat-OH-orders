@@ -30,7 +30,7 @@
             <div class="tile" data-type="{typeLabel}" data-variants='{sizeList}' data-price='{product.price}'>
                 <f:link.action action="detail" arguments="{product:product}">
                     <div class="tile-container--image">
-                        <f:image image="{product.image}" />
+                        <f:image image="{product.image}" cropVariant="default" />
                     </div>
                     <div class="tile-container--headline">
                         {product.name}
